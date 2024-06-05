@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="container mx-auto p-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold">My Portfolio</a>
+            <div>
+                <a href="#home" class="text-gray-700 mx-2">Home</a>
+                <a href="#about" class="text-gray-700 mx-2">About</a>
+                <a href="#skills" class="text-gray-700 mx-2">Skills</a>
+                <a href="#projects" class="text-gray-700 mx-2">Projects</a>
+                <a href="Resume (1).pdf" class="text-gray-700 mx-2">Resume</a>
+                <a href="#contact" class="text-gray-700 mx-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="home bg-cover bg-center h-screen"
+        style="background-image: url('https://rawcdn.githack.com/AdibaAbid/React-Portfolio/a6f4dafd28526b6cb8a95e81cdeb13132040a246/src/assets/img/carousal/slide1.webp');">
+        <div class="container mx-auto h-full flex justify-center items-center">
+            <div class="text-center text-white">
+                <h1 class="myName text-5xl font-bold mb-4 text-yellow-500">Hello, I'm Arshad Khan</h1>
+                <p class="text-xl mb-4 text-yellow-100">A passionate Full Stack Web Developer</p>
+                <a href="#projects" class="bg-blue-500 text-white px-4 py-2 rounded">View My Work</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-300">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">About Me</h2>
+            <div class="text-xl mb-4">
+                <br>Hello, I'm Arshad Khan</br>
+                <br>
+                I am an aspiring Full Stack Web Developer currently pursuing a comprehensive course from AlmaBetter. I
+                hold a B-Tech degree in Electrical Engineering, which has provided me with a solid foundation in
+                problem-solving and technical skills.
+                </br>
+                <br>
+                My journey into web development started with a passion for creating interactive and dynamic user
+                experiences. I have honed my skills in HTML, CSS, JavaScript, and various frameworks like React and
+                Node.js. I am also proficient in backend development, working with databases, and ensuring seamless
+                integration between the frontend and backend.
+                </br>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-500">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">TECH SKILLS</h2>
+            <ul class="text-xl mb-4 flex justify-center">
+                <li class="flex items-center mr-4">
+                    <i class="fab fa-html5 text-orange-500 mr-2"></i>
+                    HTML5
+                </li>
+                <li class="flex items-center mr-4">
+                    <i class="fab fa-css3-alt text-blue-500 mr-2"></i>
+                    CSS3
+                </li>
+                <li class="flex items-center mr-4">
+                    <i class="fab fa-js text-yellow-500 mr-2"></i>
+                    JavaScript
+                </li>
+                <li class="flex items-center mr-4">
+                    <i class="fab fa-react text-blue-400 mr-2"></i>
+                    React.js
+                </li>
+                <li class="flex items-center mr-4">
+                    <i class="fab fa-node-js text-green-500 mr-2"></i>
+                    Node.js
+                </li>
+                <li class="flex items-center mr-4">
+                    <i class="fab fa-node-js text-green-500 mr-2"></i>
+                    Express.js
+                </li>
+                <li class="flex items-center">
+                    <i class="fas fa-database text-gray-500 mr-2"></i>
+                    Database Management
+                </li>
+                <!-- Add more skills as needed -->
+            </ul>
+        </div>
+    </section>
+    <hr>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-500">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <img src="data:image/png;base64,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"
+                        alt="Project 1" class="rounded-t-lg">
+                    <h3 class="text-2xl font-bold mt-4">Project 1</h3>
+                    <p class="text-gray-700">Netflix Clone</p>
+                    <a href="https://github.com/arshadkhan92/Netflix-Clone.git" class="text-gray-700 mx-2"><Button
+                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">SOURCE
+                            CODE</Button></a>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-white shadow-lg rounded-lg p-6">
+                    <img src="https://www.biztechcs.com/wp-content/uploads/2020/08/unnamed.png" alt="Project 2"
+                        class="rounded-t-lg">
+                    <h3 class="text-2xl font-bold mt-4">Project 2</h3>
+                    <p class="text-gray-700">Amazon Clone</p>
+                    <a href="https://github.com/arshadkhan92/Amazon-Clone.git" class="text-gray-700 mx-2"><Button
+                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">SOURCE
+                            CODE</Button></a>
+
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-500">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">Contact Me</h2>
+            <form class="max-w-lg mx-auto">
+                <div class="mb-4">
+                    <input type="text" class="w-full px-4 py-2 rounded" placeholder="Name">
+                </div>
+                <div class="mb-4">
+                    <input type="email" class="w-full px-4 py-2 rounded" placeholder="Email">
+                </div>
+                <div class="mb-4">
+                    <textarea class="w-full px-4 py-2 rounded" placeholder="Message"></textarea>
+                </div>
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            &copy; 2024 Arshad Khan. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
